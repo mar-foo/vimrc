@@ -61,3 +61,8 @@ nmap <leader>? :!man
 
 " CUSTOM FUNCTIONS
 nnoremap <leader>T :ThemeSwap<cr>
+
+" COMPLETION
+inoremap <expr> <cr> pumvisible() ? "<C-y>" : "<cr>"
+inoremap <expr> <C-c> pumvisible() ? "<C-e><esc>" : "<C-c>"
+inoremap <expr> <tab> pumvisible() ? "<C-n>" : "<C-R>=CleverTab()<cr>"

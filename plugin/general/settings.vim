@@ -17,3 +17,4 @@ set hlsearch
 set scrolloff=8
 set colorcolumn=80
 set path+=**
+set tabstop=4 shiftwidth=4 expandtab

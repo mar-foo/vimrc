@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/mario/.vim'
+let g:netrw_dirhist_9='/home/mario/.vim/after/ftplugin'
+let g:netrw_dirhist_8='/home/mario/.vim'
+let g:netrw_dirhist_7='/home/mario/.vim/after'
+let g:netrw_dirhist_6='/home/mario/.vim/after/ftplugin'
+let g:netrw_dirhist_5='/home/mario/.vim'
+let g:netrw_dirhist_4='/home/mario/.vim/after'
+let g:netrw_dirhist_3='/home/mario/.vim/after/ftplugin'
+let g:netrw_dirhist_2='/home/mario/.vim/after'
+let g:netrw_dirhist_1='/home/mario/.vim'

@@ -1,10 +1,11 @@
 let mapleader = ","
+
 " Easy ESC
 inoremap <silent>jk <esc>
 inoremap <silent>kj <esc>
 
 " TAB in normal mode moves to the next quickfix entry
-nnoremap <silent><tab> :bnext<cr>
+nnoremap <silent><tab> :cnext<cr>
 
 " WINDOW AND BUFFER MANAGEMENT
 nnoremap <leader>h :wincmd h<cr>
@@ -13,8 +14,8 @@ nnoremap <leader>k :wincmd k<cr>
 nnoremap <leader>l :wincmd l<cr>
 nnoremap <leader>o :only<cr>
 nnoremap <leader>c :close<cr>
-nnoremap <leader>v :vsplit<cr>:find
-nnoremap <leader>s :split<cr>:find
+nnoremap <leader>v :vsplit<cr>:find<space>
+nnoremap <leader>s :split<cr>:find<space>
 nnoremap <leader>d :bd!<cr> 
 
 " PLACEHOLDERS
@@ -57,12 +58,18 @@ nmap E gE
 nmap L g$
 
 " Browse man pages
-nmap <leader>? :!man 
+nmap <leader>? :Man 
 
 " CUSTOM FUNCTIONS
+nnoremap <silent><leader>w :Grep<cr>
 nnoremap <leader>T :ThemeSwap<cr>
+nnoremap <leader>t :Todo<cr>
+nnoremap <leader>q :ToggleQuickfix<cr>
 
 " COMPLETION
 inoremap <expr> <cr> pumvisible() ? "<C-y>" : "<cr>"
 inoremap <expr> <C-c> pumvisible() ? "<C-e><esc>" : "<C-c>"
 inoremap <expr> <tab> pumvisible() ? "<C-n>" : "<C-R>=CleverTab()<cr>"
+
+" FILES
+nnoremap <leader><leader> :find<space>

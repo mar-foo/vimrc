@@ -18,5 +18,6 @@ set scrolloff=8
 set colorcolumn=80
 set path+=**
 set tabstop=4 shiftwidth=4 expandtab
+set completeopt=menu,menuone,noselect,longest,preview
 
 set wildignore=.git/*,*.s?o,*.gif,*.jpe?g,*.png,

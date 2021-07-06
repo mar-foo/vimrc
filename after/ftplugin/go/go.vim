@@ -1,22 +1,19 @@
 setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
-setlocal autoindent 
-setlocal smartindent
+setlocal smartindent autoindent
 setlocal colorcolumn=80
-
 setlocal path=.,**,,
 setlocal wildignore=.git/*
-
 setlocal define=^\\s*\\<\\(func\\\|type\\)\\>
-setlocal path=.,**,,
-setlocal smartindent autoindent
-setlocal tabstop=4 shiftwidth=4 expandtab
-setlocal colorcolumn=80
-
 setlocal listchars=tab:\|\ ,trail:.
 setlocal list
+
 setlocal define=^\\s*\\<\\(func\\\|type\\\|interface\\)\\>
 setlocal omnifunc=syntaxcomplete#Complete
 compiler go
+
+" Remaps
+nmap <buffer><leader>? :GoDoc 
+nmap <buffer>K :GoDoc expand("<cWORD>")<cr>
 
 "function! Searchgodecl(name)
 "    let point = stridx(a:name, ".")

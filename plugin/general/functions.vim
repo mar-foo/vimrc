@@ -1,7 +1,13 @@
 function Grep()
+    let extension = ' **/*.' . &filetype
     let pattern = input("Search for? ")
-    exec "vimgrep " . pattern . " **/*"
+    exec "vimgrep " . pattern . extension
     exec "copen"
+endfunc
+
+function QuickMake()
+    execute "silent make | redraw!"
+    copen
 endfunc
 
 function ThemeSwap()
@@ -33,8 +39,3 @@ function Todo()
         normal ciwTODO
     endif
 endfunc
-
-command! Grep :call Grep()
-command! ThemeSwap :call ThemeSwap()
-command! Todo :call Todo()
-command! ToggleQuickfix :call ToggleQuickfix()

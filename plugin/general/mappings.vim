@@ -61,10 +61,11 @@ nmap L g$
 nmap <leader>? :Man 
 
 " CUSTOM FUNCTIONS
-nnoremap <silent><leader>w :Grep<cr>
-nnoremap <leader>T :ThemeSwap<cr>
-nnoremap <leader>t :Todo<cr>
-nnoremap <leader>q :ToggleQuickfix<cr>
+nnoremap <silent><leader>w :call Grep()<cr>
+nnoremap <leader>T :call ThemeSwap()<cr>
+nnoremap <leader>t :call Todo()<cr>
+nnoremap <silent><leader>q :call ToggleQuickfix()<cr>
+nnoremap <silent><leader>C :call QuickMake()<cr>
 
 " COMPLETION
 inoremap <expr> <cr> pumvisible() ? "<C-y>" : "<cr>"

@@ -16,6 +16,7 @@ setlocal listchars=tab:\|\ ,trail:.
 setlocal list
 setlocal define=^\\s*\\<\\(func\\\|type\\\|interface\\)\\>
 setlocal omnifunc=syntaxcomplete#Complete
+compiler go
 
 "function! Searchgodecl(name)
 "    let point = stridx(a:name, ".")

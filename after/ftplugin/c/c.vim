@@ -5,3 +5,4 @@ setlocal complete=.,i,d
 
 setlocal listchars=tab:\|\ ,trail:.
 setlocal list
+compiler tcc

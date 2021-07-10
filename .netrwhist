@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/mario/.vim/.git'
+let g:netrw_dirhist_0='/home/mario/.vim/autoload'
 let g:netrw_dirhist_9='/home/mario/.vim'
 let g:netrw_dirhist_8='/home/mario/.vim/pack'
 let g:netrw_dirhist_7='/home/mario/.vim/pack/default'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_5='/home/mario/.vim/pack/default'
 let g:netrw_dirhist_4='/home/mario/.vim/pack'
 let g:netrw_dirhist_3='/home/mario/.vim'
 let g:netrw_dirhist_2='/home/mario/.vim/pack'
-let g:netrw_dirhist_1='/home/mario/.vim'
-let g:netrw_dirhist_0='/home/mario/.vim/plugin'

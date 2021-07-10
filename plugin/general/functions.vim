@@ -1,7 +1,6 @@
 function Grep()
-    let extension = ' **/*.' . &filetype
     let pattern = input("Search for? ")
-    exec "vimgrep " . pattern . extension
+    exec "vimgrep " . pattern . " **/*"
     exec "copen"
 endfunc
 
@@ -14,10 +13,12 @@ function ThemeSwap()
     if g:colors_name != 'gruvbox'
         colorscheme gruvbox
         set background=dark
+        hi Normal ctermbg=none
     elseif &background == 'dark'
         set background=light
     else
         set background=dark
+        hi Normal ctermbg=none
     endif
 endfunc
 

@@ -4,6 +4,16 @@ function Grep()
     exec "copen"
 endfunc
 
+function GoDoc(documentation)
+    silent execute "!go doc " . a:documentation . " > /tmp/GoDoc"
+    set autoread
+    execute "9split /tmp/GoDoc"
+    silent execute "redraw!"
+    silent execute "edit!"
+    setlocal statusline=%{'GoDoc'}
+    set autoread&
+endfunc
+
 function QuickMake()
     execute "silent make | redraw!"
     copen
@@ -40,3 +50,5 @@ function Todo()
         normal ciwTODO
     endif
 endfunc
+
+command! -nargs=1 GoDoc :call GoDoc("<arg>")

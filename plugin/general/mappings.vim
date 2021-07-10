@@ -5,7 +5,7 @@ inoremap <silent>jk <esc>
 inoremap <silent>kj <esc>
 
 " TAB in normal mode moves to the next quickfix entry
-nnoremap <silent><tab> :cnext<cr>
+nnoremap <silent><tab> :bnext<cr>
 
 " WINDOW AND BUFFER MANAGEMENT
 nnoremap <leader>h :wincmd h<cr>
@@ -17,6 +17,10 @@ nnoremap <leader>c :close<cr>
 nnoremap <leader>v :vsplit<cr>:find<space>
 nnoremap <leader>s :split<cr>:find<space>
 nnoremap <leader>d :bd!<cr> 
+
+" QUICKFIX LIST
+nnoremap <C-j> :cnext<cr>
+nnoremap <C-k> :cprev<cr>
 
 " PLACEHOLDERS
 nnoremap <leader><space> /<++><cr>ca<
@@ -74,3 +78,4 @@ inoremap <expr> <tab> pumvisible() ? "<C-n>" : "<C-R>=CleverTab()<cr>"
 
 " FILES
 nnoremap <leader><leader> :find<space>
+nnoremap <C-p> :FZF<cr>

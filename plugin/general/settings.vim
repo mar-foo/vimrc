@@ -19,3 +19,8 @@ set splitbelow splitright
 set tabstop=4 shiftwidth=4 expandtab
 set textwidth=79
 set wildignore=.git/*,*.s?o,*.gif,*.jpe?g,*.png,
+
+augroup mail
+  autocmd!
+  autocmd BufEnter neomutt-* read ~/.local/share/signature.txt
+augroup END

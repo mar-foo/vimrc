@@ -7,3 +7,5 @@ setlocal listchars=tab:\|\ ,trail:.
 setlocal list
 setlocal omnifunc=go#complete#Complete
 compiler go
+
+nmap <buffer>gr :GoReferrers<cr>

@@ -1,0 +1,45 @@
+snippet bsc
+${1:scanner} := bufio.NewScanner(${2:*os.File})
+for $1.Scan() {
+	${3:body}
+}
+$0
+endsnippet
+
+snippet errf
+if err != nil {
+	fmt.Println(err)
+	os.Exit(${1:1})
+}
+$0
+endsnippet
+
+snippet func
+// $2($3) ${6:...}
+func ${2:name}(${3:params}) $4 {
+	${5:body}
+}
+$0
+endsnippet
+
+snippet forr
+for i := range ${1:object} {
+	$2
+}
+$0
+endsnippet
+
+snippet fors
+for ${1:index}, ${2:rune} := range ${3:string} {
+	$4
+}
+$0
+endsnippet
+
+snippet meth
+// $3($4) ${5:...}
+for (${1:receiver} ${2:type}) ${3:name}(${4:params}) {
+	$6
+}
+$0
+endsnippet

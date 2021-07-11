@@ -16,7 +16,7 @@ nnoremap <leader>o :only<cr>
 nnoremap <leader>c :close<cr>
 nnoremap <leader>v :vsplit<cr>:find<space>
 nnoremap <leader>s :split<cr>:find<space>
-nnoremap <leader>d :bd!<cr> 
+nnoremap <leader>d :bd!<cr>
 
 " QUICKFIX LIST
 nnoremap <C-j> :cnext<cr>
@@ -26,8 +26,8 @@ nnoremap <C-k> :cprev<cr>
 nnoremap <leader><space> /<++><cr>ca<
 
 " TERMINAL
-tnoremap <esc> \<c-\\>\<c-n>
-tnoremap jk \<c-\\>\<c-n>
+tnoremap <esc> <c-\><c-n>
+tnoremap jk <c-\><c-n>
 
 " REGISTERS
 nnoremap dD "_dd
@@ -62,7 +62,7 @@ nmap E gE
 nmap L g$
 
 " Browse man pages
-nmap <leader>? :Man 
+nmap <leader>? :Man
 
 " CUSTOM FUNCTIONS
 nnoremap <silent><leader>w :call Grep()<cr>
@@ -79,3 +79,4 @@ inoremap <expr> <tab> pumvisible() ? "<C-n>" : "<C-R>=CleverTab()<cr>"
 " FILES
 nnoremap <leader><leader> :find<space>
 nnoremap <C-p> :FZF<cr>
+nnoremap <leader>g :G<cr>

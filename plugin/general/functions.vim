@@ -14,11 +14,6 @@ function GoDoc(documentation)
     set autoread&
 endfunc
 
-function QuickMake()
-    execute "silent make | redraw!"
-    copen
-endfunc
-
 function ThemeSwap()
     if g:colors_name != 'gruvbox'
         colorscheme gruvbox
@@ -42,6 +37,15 @@ function ToggleQuickfix()
         let g:quickfix_open = 1
     endif
 endfunc
+
+function QuickMake()
+    execute "silent make | redraw!"
+    if g:quickfix_open == 0
+        let g:quickfix_open = 1
+        copen
+    endif
+endfunc
+
 
 function Todo()
     if expand("<cword>") == 'TODO'

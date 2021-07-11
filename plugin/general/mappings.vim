@@ -75,6 +75,8 @@ nnoremap <silent><leader>C :call QuickMake()<cr>
 inoremap <expr> <cr> pumvisible() ? "<C-y>" : "<cr>"
 inoremap <expr> <C-c> pumvisible() ? "<C-e><esc>" : "<C-c>"
 inoremap <expr> <tab> pumvisible() ? "<C-n>" : "<C-R>=CleverTab()<cr>"
+" use <C-space> to trigger completion
+inoremap <C-@> <C-R>=CleverTab()<cr>
 
 " FILES
 nnoremap <leader><leader> :find<space>

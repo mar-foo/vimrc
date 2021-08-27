@@ -11,7 +11,10 @@ Plug 'junegunn/fzf.vim', { 'on': 'FZF' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'SirVer/Ultisnips'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 call plug#end()
 
 colorscheme gruvbox

@@ -3,6 +3,7 @@ let mapleader = ","
 " Easy ESC
 inoremap <silent>jk <esc>
 inoremap <silent>kj <esc>
+inoremap <silent>:w <esc>:w<cr>
 
 " TAB in normal mode moves to the next quickfix entry
 nnoremap <silent><tab> :bnext<cr>
